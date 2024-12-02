@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="output.css"/>
 </head>
 <body class="bg-slate-600">
+
+    <!-- Font, styles -->
     <div class="pl-16 bg-gray-600 border-l-8 border-blue-600"> 
         <p class="text-6xl text-primary"> This is sample text </p>
         <p class="text-6xl text-red-400"> This is sample text </p>
@@ -14,5 +16,48 @@
         <p class="text-6xl text-secondary-200"> This is sample text </p>
         <p class="text-6xl text-very-huge-tan text-secondary-100"> This is sample text </p>
     </div>
+
+    <br>
+
+    <!-- Flexboxes -->
+    <p class="text-6xl text-orange-600">Layout in Tailwind</p>
+    <div class="mt-8 p-4 flex justify-evenly border-4 border-black">
+        <div class="w-6 h-6 bg-secondary-100"></div>
+        <div class="w-6 h-6 bg-secondary-200"></div>
+        <div class="w-6 h-6 bg-primary"></div>
+    </div>
+
+
+    <!-- Button -->
+    <div class="text-center">
+        <button class="px-4 py-2 m-4 btn bg-blue-500 rounded text-white ">Save</button>
+    </div>
+
+
+    <!-- Responsive Classes -->
+    <div class="mx-0 sm:mx-1 md:mx-3 lg:mx-6 xl:mx-9">
+        <div class="w-full h-4 mt-4 bg-red-500"></div>
+        <div class="w-full h-4 mt-4 bg-green-500"></div>
+        <div class="w-full h-4 mt-4 bg-blue-500"></div>
+    </div>
+
+        <!-- for sm screen sized buttons will be in center , for above will be at the end.  -->
+    <div class="flex justify-center sm:justify-end"> 
+        <button class="bg-blue-500 rounded mx-4 p-4 ">button1</button>
+        <button class="bg-green-400 rounded mx-4 p-4 ">button2</button>
+    </div>
+
+
+
+    <!-- Cards -->
+    <div>------Cards-----</div>
+    <div class="bg-white p-4 px-8 w-1/4 text-center rounded-xl mx-auto">
+        <div >Title</div>
+        <img class="inline" src="./images/cheeseburger.png">
+        <div>Description</div>
+    </div>
+
+
+
 </body>
 </html>
