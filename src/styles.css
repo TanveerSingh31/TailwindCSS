@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom classes */
+.badge {
+    @apply p-1 uppercase font-bold bg-secondary-100 text-secondary-200 rounded-full absolute top-10 m-2;
+}
+
+
+/* We can also divide multiple classes into multiple @apply statements , based on their purpose. */
+.card {
+    @apply bg-red-400; 
+    @apply shadow-xl shadow-black;
+    @apply py-4 w-1/4 ;
+    @apply text-center ;
+    @apply rounded-xl mx-auto; 
+    @apply relative;
+}
