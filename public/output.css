@@ -563,9 +563,19 @@ video {
   margin-right: 0px;
 }
 
+.mx-20 {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .mt-4 {
@@ -584,6 +594,10 @@ video {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .h-4 {
   height: 1rem;
 }
@@ -600,20 +614,32 @@ video {
   width: 100%;
 }
 
-.justify-center {
-  justify-content: center;
+.flex-col {
+  flex-direction: column;
 }
 
-.justify-around {
-  justify-content: space-around;
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-evenly {
   justify-content: space-evenly;
 }
 
+.gap-10 {
+  gap: 2.5rem;
+}
+
 .rounded {
   border-radius: 0.25rem;
+}
+
+.border-2 {
+  border-width: 2px;
 }
 
 .border-4 {
@@ -632,6 +658,11 @@ video {
 .border-blue-600 {
   --tw-border-opacity: 1;
   border-color: rgb(37 99 235 / var(--tw-border-opacity, 1));
+}
+
+.border-secondary-100 {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 0 0 / var(--tw-border-opacity, 1));
 }
 
 .bg-blue-500 {
@@ -766,7 +797,6 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   --tw-shadow-color: #000;
   --tw-shadow: var(--tw-shadow-colored);
-  width: 25%;
   padding-top: 1rem;
   padding-bottom: 1rem;
   text-align: center;
@@ -774,6 +804,39 @@ video {
   margin-right: auto;
   border-radius: 0.75rem;
   position: relative;
+}
+
+.btn {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 50%;
+}
+
+@media (min-width: 768px) {
+  .btn {
+    width: auto;
+  }
+}
+
+.btn {
+  border-radius: 9999px;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 0 0 / var(--tw-bg-opacity, 1));
+}
+
+.btn {
+  cursor: pointer;
 }
 
 @media (min-width: 640px) {
@@ -792,12 +855,24 @@ video {
     margin-left: 0.75rem;
     margin-right: 0.75rem;
   }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:justify-end {
+    justify-content: flex-end;
+  }
 }
 
 @media (min-width: 1024px) {
   .lg\:mx-6 {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 

@@ -12,8 +12,19 @@
 .card {
     @apply bg-red-400; 
     @apply shadow-xl shadow-black;
-    @apply py-4 w-1/4 ;
+    @apply py-4;
     @apply text-center ;
     @apply rounded-xl mx-auto; 
     @apply relative;
+}
+
+
+.btn {
+    @apply mx-2 my-4;
+    @apply w-1/2 md:w-auto;
+    @apply rounded-full;
+    @apply px-3 py-2;
+    @apply uppercase font-bold; 
+    @apply hover:bg-secondary-100;
+    @apply cursor-pointer;
 }
