@@ -11,7 +11,7 @@
 /* We can also divide multiple classes into multiple @apply statements , based on their purpose. */
 .card {
     @apply bg-red-400; 
-    @apply shadow-xl shadow-black;
+    @apply hover:shadow-2xl shadow-black;
     @apply py-4;
     @apply text-center ;
     @apply rounded-xl mx-auto; 
@@ -25,6 +25,6 @@
     @apply rounded-full;
     @apply px-3 py-2;
     @apply uppercase font-bold; 
-    @apply hover:bg-secondary-100;
+    @apply hover:bg-secondary-100 hover:text-white;
     @apply cursor-pointer;
 }
